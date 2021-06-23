@@ -106,3 +106,26 @@ knitr::read_chunk("penguins_plots.R")
 ```{r iris-pairs}
 ```
 
+
+----
+# Knit Child
+
+NOW I’ve got these other small .Rmds. instead of R scripts
+
+```{r, child="penguins-background.Rmd"}
+
+```
+
+A new way to reuse your code so when you're developing content for diff audiences: Might always want this in your grant application, or your samples. 
+
+Alison: Conditionally including text/some parts of your story. 
+
+There's a lot of other ways to get your code from one file into another, but here we're also doing it nicely with text. we can also do it with code: 
+
+```{r, child="penguins-simpson.Rmd"}
+
+```
+
+
+Finale: in setup chunk
+

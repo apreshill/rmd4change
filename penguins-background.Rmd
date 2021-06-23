@@ -1,0 +1,4 @@
+# Artwork
+
+You can download palmerpenguins art (useful for teaching with the data) in vignette("art"). If you use this artwork, please cite with: “Artwork by @allison_horst”.
+Meet the Palmer penguins
