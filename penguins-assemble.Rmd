@@ -5,7 +5,7 @@ date: "6/23/2021"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, purl=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -75,6 +75,8 @@ also, can point out new thing in drop-down code navigator
 ---
 <!--read chunk-->
 
+## Read chunk
+
 Julie: Ok so Alison this is great. If I have a full R script, I can source it.
 
 What if I want to organize
@@ -106,8 +108,8 @@ knitr::read_chunk("penguins_plots.R")
 ```{r iris-pairs}
 ```
 
-
-----
+---
+<!--knit child-->
 # Knit Child
 
 NOW I’ve got these other small .Rmds. instead of R scripts
@@ -126,6 +128,13 @@ There's a lot of other ways to get your code from one file into another, but her
 
 ```
 
+---
+<!--purl-->
 
-Finale: in setup chunk
+Finale: in console
 
+```{r}
+knitr::purl("penguins-assemble.Rmd")
+```
+
+Then use purl=FALSE as a chunk option to leave individual ones out of the script
