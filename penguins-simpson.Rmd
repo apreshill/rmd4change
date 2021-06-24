@@ -26,8 +26,5 @@ bill_no_species <- ggplot(data = penguins,
   geom_smooth(method = "lm", se = FALSE, color = "gray50")
 
 bill_no_species
-#> `geom_smooth()` using formula 'y ~ x'
-#> Warning: Removed 2 rows containing non-finite values (stat_smooth).
-#> Warning: Removed 2 rows containing missing values (geom_point).
 ```
 
